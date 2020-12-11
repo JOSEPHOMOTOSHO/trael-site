@@ -1,0 +1,11 @@
+body {
+  color: palevioletred;
+}
+
+$maincolor: black;
+
+.large-hero {
+  h2 {
+    color: $maincolor;
+  }
+}

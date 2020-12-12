@@ -1,11 +1,3 @@
-body {
-  color: palevioletred;
-}
-
-$maincolor: black;
-
-.large-hero {
-  h2 {
-    color: $maincolor;
-  }
-}
+@import "normalize.css";
+@import "modules/_large-hero";
+@import "base/_global";

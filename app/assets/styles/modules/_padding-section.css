@@ -1,15 +1,12 @@
 .padding-section {
-  padding: 4.5rem 0;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
+  padding: 1.2rem 0;
 
-  &--blue {
-    color: $mainBlue;
+  @mixin atMedium {
+    padding: 4.5rem 0;
   }
 
-  &--bgcolor {
+  &--blue {
     background-color: $mainBlue;
+    color: #fff;
   }
 }

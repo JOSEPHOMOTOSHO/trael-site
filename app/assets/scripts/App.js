@@ -1,7 +1,9 @@
 import "../styles/style.css"
 import MobileMenu from "./Modules/MobileMenu"
 import RevealOnScroll from "./modules/RevealOnScroll"
+import StickyHeader from "./modules/stickyHeader"
 
+let stickyHeader = new StickyHeader();
  new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
  new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 

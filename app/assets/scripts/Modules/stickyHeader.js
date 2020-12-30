@@ -36,6 +36,8 @@ class StickyHeader{
 
     }
 
+    // This code snippet below triggers the diff colors on links in the header when you scroll
+
     CalcSection(el){
         if(window.scrollY +  this.browserHeight > el.offsetTop && window.scrollY < el.offsetTop + el.offsetHeight){
             let scrollPercent = (el.getBoundingClientRect().y/this.browserHeight) * 100;

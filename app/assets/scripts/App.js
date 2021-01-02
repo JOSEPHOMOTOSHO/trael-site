@@ -1,8 +1,8 @@
 import "../styles/style.css"
 import "lazysizes"
-import MobileMenu from "./modules/MobileMenu"
-import RevealOnScroll from "./modules/RevealOnScroll"
-import StickyHeader from "./modules/stickyHeader"
+import MobileMenu from "./modules/MobileMenu.js"
+import RevealOnScroll from "./modules/RevealOnScroll.js"
+import StickyHeader from "./modules/stickyHeader.js"
 
 
 

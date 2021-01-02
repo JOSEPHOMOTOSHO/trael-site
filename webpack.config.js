@@ -1,10 +1,10 @@
 const currentTask = process.env.npm_lifecycle_event
 const path = require("path")
 const {CleanWebpackPlugin} = require("clean-webpack-plugin")
-const MinCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const fse = require("fs-extra")
-const { template } = require("lodash")
+// const { template } = require("lodash")
 
 const postCSSPlugins = [
     require('postcss-import'),
@@ -54,7 +54,7 @@ if(currentTask == "dev"){
         filename: "bundled.js",
         path: path.resolve(__dirname,"app")
     }
-    config.devServer={
+    config.devServer=  {
         before: function(app,server){
             server._watch('./app/**/*.html')
         },
@@ -79,7 +79,7 @@ if(currentTask == "build"){
             }
         }
     })
-    cssConfig.use.unshift(MinCssExtractPlugin.loader)
+    cssConfig.use.unshift(MiniCssExtractPlugin.loader)
     postCSSPlugins.push( require("cssnano"))
     config.output = {
         filename: "[name].[chunkhash].js",
@@ -92,7 +92,7 @@ if(currentTask == "build"){
 }
     config.plugins.push(
         new CleanWebpackPlugin(), 
-        new MinCssExtractPlugin({filename:"styles.[chunkhash].css"}),
+        new MiniCssExtractPlugin({filename:"styles.[chunkhash].css"}),
         new runAfterCompile()
         )
 }

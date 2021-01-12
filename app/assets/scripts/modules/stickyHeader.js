@@ -18,7 +18,7 @@ class StickyHeader{
         if(window.scrollY > 60){ 
             this.SiteHeader.classList.add("site-header--dark-bg")
 
-        }else{
+        }else{ 
             this.SiteHeader.classList.remove("site-header--dark-bg")
         }
 

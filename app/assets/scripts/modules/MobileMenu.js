@@ -13,7 +13,7 @@ class MobileMenu{
     toggleMenuIcon(){
         this.MenuContent.classList.toggle("site-header__menu-section--is-visible")
         this.siteHeader.classList.toggle("site-header--is-expanded")
-        this.MenuIcon.classList.toggle("site-header__menu-btn--close-x")
+        this.MenuIcon.classList.toggle("site-header__menu-btn--close-x")     
     }
 }
 

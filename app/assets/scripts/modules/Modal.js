@@ -15,7 +15,6 @@ class modal{
     open(){
         this.modal.classList.add("modal--is-visible")
     }
-
 //closing
     close(){
         this.modal.classList.remove("modal--is-visible")

@@ -29,7 +29,7 @@ calculateScroll(el){
     if(scrollPercent < this.percent){
         el.classList.add("reveal-item--is-visible")
         el.isRevealed = true;
-        if (el.isLastItem){
+        if (el.isLastItem){ 
             window.removeEventListener("scroll",this.scrollThrottle)
         }
     }
